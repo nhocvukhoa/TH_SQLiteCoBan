@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#6D75B8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textSua"
+        android:gravity="center"
+        android:text="Sửa công việc"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ff00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:hint="Nhập tên công việc"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textSua"
+        android:id="@+id/editTextTenCVEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></EditText>
+    <Button
+        android:id="@+id/buttonXacNhan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp"
+        android:layout_below="@+id/editTextTenCVEdit"
+        android:text="XÁC NHẬN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></Button>
+    <Button
+        android:id="@+id/buttonHuyEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HỦY"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/editTextTenCVEdit"
+        android:layout_toRightOf="@id/buttonXacNhan"
+        ></Button>
+</RelativeLayout>
